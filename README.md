@@ -21,3 +21,7 @@ Supported inputs:
 To create a plot for an output from `type_variants`:
    
     var_intersect_plot -i variant_check.tsv -t type_variants -o example.html 
+
+## Output
+
+![](variant_intersections/example.png)
