@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from pathlib import Path
 import pandas as pd
+import upsetplot
+from upset_plotly import plot
 
 
 def parse_type_variant(input_file: Path) -> upsetplot.UpSet:
@@ -37,7 +39,7 @@ def parse_type_variant(input_file: Path) -> upsetplot.UpSet:
         else:
             pass
 
-    # convert sets to upset intersections
+    # convert sets to df containing intersections
     variant_sets = upsetplot.from_contents(variant_sets)
     return variant_sets
 
