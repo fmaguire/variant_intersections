@@ -7,8 +7,8 @@ upsetplot showing the co-occurrence of specific variants.
 
 Supported inputs:
 
-1. Output csv from [type_variants](https://github.com/cov-ert/type_variants) (must be run with --append-genotypes
-2. Output from [`ncov-watch.py`](https://github.com/jts/ncov-random-scripts).
+1. Output csv from [type_variants](https://github.com/cov-ert/type_variants) (must be run with --append-genotypes)
+2. Output from [ncov-watch.py](https://github.com/jts/ncov-random-scripts).
 
 ## Installation
     
