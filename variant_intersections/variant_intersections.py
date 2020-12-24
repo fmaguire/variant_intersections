@@ -48,9 +48,11 @@ def parse_ncov_watch(input_file: Path) -> upsetplot.UpSet:
     """
     Parse output from ncov_watch
     """
-    pass
-    #variants = pd
-
+    variants = pd.read_csv(input_file, sep='\t')
+    variant_sets = {}
+    variant_sets = variants.groupby('mutation')['sample'].apply(list).to_dict()
+    variant_sets = upsetplot.from_contents(variant_sets)
+    return variant_sets
 
 
 def variant_intersections(input_file: Path, input_type: str, output_path: Path):
